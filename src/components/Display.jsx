@@ -10,7 +10,8 @@ class Display extends Component {
     let gameTitle = null;
 
     if (this.props.gameStatus != null) {
-      gameTitle = this.props.gameStatus + " wins";
+      gameTitle = this.props.gameStatus + " wins the game";
+      alert(this.props.gameStatus + " wis");
     } else {
       if (this.props.stepNumber % 2 == 0) {
         gameTitle = "Next move for X";
